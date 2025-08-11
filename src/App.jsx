@@ -5,19 +5,19 @@ import Login from './compo/Login'
 import Home from './compo/Home'
 
 function App() {
-
   return (
-      <>
-        <h1>과제방</h1>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/react-site-2/" element={<Layout />} />
-              <Route index element={<Home />} />
-              <Route path="/react-site-2/login" element={<Login />} />
-          </Routes>
-        </BrowserRouter>
-      </>
-      )
+    <>
+      <h1>과제방</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/react-site-2/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="login" element={<Login />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
 
-      export default App
+export default App
