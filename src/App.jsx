@@ -1,5 +1,8 @@
-import { useState } from 'react'
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './compo/Layout'
+import Login from './compo/Login'
+import Home from './compo/Home'
 
 function App() {
 
