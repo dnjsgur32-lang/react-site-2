@@ -1,18 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
       <>
-        <h1>test</h1>
+        <h1>과제방</h1>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/react-site-2/" element={<Layout />} />
+              <Route index element={<Home />} />
+              <Route path="/react-site-2/login" element={<Login />} />
+          </Routes>
+        </BrowserRouter>
       </>
-    </>
-  )
+      )
 }
 
-export default App
+      export default App
